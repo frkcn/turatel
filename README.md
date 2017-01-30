@@ -10,7 +10,7 @@ Usage
 
 - Composer : 
 ```
-“frkcn/turatel" : "1.0.*"
+"frkcn/turatel" : "dev-master"
 ```
 - App.php include : 
 ``` 
