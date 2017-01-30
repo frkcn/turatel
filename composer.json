@@ -1,0 +1,11 @@
+{
+    "name": "frkcn/turatel",
+    "description": "Laravel package for turatel sms service",
+    "authors": [
+        {
+            "name": "Faruk Can",
+            "email": "frkcn@bil.omu.edu.tr"
+        }
+    ],
+    "require": {}
+}
