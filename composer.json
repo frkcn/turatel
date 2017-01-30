@@ -7,5 +7,10 @@
             "email": "frkcn@bil.omu.edu.tr"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Frkcn\\Turatel\\": "src/"
+        }
+    },
     "require": {}
 }
