@@ -49,7 +49,12 @@ class TuratelController extends Controller
      */
     public function setNumbers($numbers)
     {
-        $this->numbers = $this->formatNumber($numbers, "international");
+        $numbersArray = explode(',', $numbers);
+        $numbersText = "";
+        foreach ($numbersArray as $na ) {
+            $numbersText.=",".$this->formatNumber($na, "international");
+        }
+        $this->numbers = ltrim($numbersText, ',');
         return $this;
     }
 
