@@ -26,20 +26,27 @@ php artisan vendor:publish
 Config/turatel.php username, password etc.
 ```
 
-- Sample Request For Single Number : 
+- Include Once Before Using :
 
 ```
-$turatel = new Turatel\TuratelController();
-        $turatel->setNumbers("5XXXXXXXXX")
-            ->setMessageBody("test message")
-            ->sendSms();
+use Frkcn\Turatel\TuratelController;
+```
+
+- Sample Request For Single Number : 
+
+
+```
+$turatel = new TuratelController();
+$turatel->setNumbers("5XXXXXXXXX")
+        ->setMessageBody("test message")
+        ->sendSms();
 ```
 
 - Sample Request For Multiple Numbers : 
 
 ```
-$turatel = new Turatel\TuratelController();
-        $turatel->setNumbers("5XXXXXXXXX,5XXXXXXXXX")
-            ->setMessageBody("test message")
-            ->sendSms();
+$turatel = new TuratelController();
+$turatel->setNumbers("5XXXXXXXXX,5XXXXXXXXX")
+        ->setMessageBody("test message")
+        ->sendSms();
 ```
